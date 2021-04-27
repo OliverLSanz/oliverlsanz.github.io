@@ -4,8 +4,10 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# gem "rails"
-gem "jekyll"
+# the github pages gem will install the right jekill version
+# gem "jekyll"
+
+gem "github-pages", "~> 214", group: :jekyll_plugins
 
 # add plugins for sitemap, rss and seo
 group :jekyll_plugins do
